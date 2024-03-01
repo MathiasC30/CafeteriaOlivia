@@ -1,0 +1,53 @@
+/* Establecer la fuente principal */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(img/moca-category.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo de títulos */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #333; /* Color de los títulos */
+    text-shadow: #f8f9fa 2px 2px 5px,#f8f9fa 2px 2px 5px,#f8f9fa 2px 2px 5px;
+}
+
+/* Estilo de párrafos */
+p {
+    color: #fff9f9; /* Color del texto principal */
+}
+
+/* Estilo de enlaces */
+a {
+    color: #007BFF; /* Color del enlace */
+}
+
+a:hover {
+    color: #0056b3; /* Color del enlace al pasar el ratón */
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #f8f9fa; /* Color de fondo de la barra de navegación */
+}
+
+/* Estilo de los elementos de la barra de navegación */
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+/* Estilo del botón de navegación en dispositivos móviles */
+.navbar-toggler-icon {
+    background-color: #007BFF; /* Color del icono del botón de navegación */
+}
+
+/* Estilo del enlace activo en la barra de navegación */
+.navbar-nav .nav-item.active a {
+    color: #007BFF; /* Color del enlace activo */
+}
+
+/* Estilo del enlace al pasar el ratón sobre la barra de navegación */
+.navbar-nav .nav-item a:hover {
+    color: #0056b3; /* Color del enlace al pasar el ratón */
+}
