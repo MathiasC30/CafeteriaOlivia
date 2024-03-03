@@ -1,22 +1,22 @@
 :root {
-    --primary-color: #2C3E50;
-    --secondary-color: #34495E;
-    --accent-color: #7F8C8D;
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #7f8c8d;
     --text-color: #333;
-    --bg-color: #ECF0F1;
-    --hover-color: #BDC3C7;
+    --bg-color: #ecf0f1;
+    --hover-color: #bdc3c7;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     transition: all 0.8s ease;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-image: url(/img/fondocafederecha.jpg);
     background-size: cover;
     color: var(--text-color);
@@ -40,7 +40,6 @@ header {
     background-position: center;
     max-height: 230px;
 }
-
 
 p {
     color: var(--bg-color);
@@ -80,7 +79,7 @@ p {
 
 /* Estilos del Grid de Inicio */
 .image-container {
-   border: 3px #2C3E50 groove;
+    border: 3px #2c3e50 groove;
     margin-top: 100px;
     position: relative;
     max-width: 500px;
@@ -90,7 +89,7 @@ p {
 }
 
 .image-container:hover {
-    border: #2C3E50 groove 8px;
+    border: #2c3e50 groove 8px;
     border-radius: 50%;
 }
 
@@ -100,7 +99,8 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--bg-color);
-    text-shadow: 2px 2px 5px var(--text-color), 2px 2px 5px var(--text-color), 2px 2px 5px var(--text-color);
+    text-shadow: 2px 2px 5px var(--text-color), 2px 2px 5px var(--text-color),
+        2px 2px 5px var(--text-color);
     font-size: 1.5em;
     text-align: center;
     opacity: 0;
@@ -120,7 +120,7 @@ form {
     max-width: 600px;
     margin: 0 auto;
     margin-top: 20px;
-    background-color: #7F8C8D;
+    background-color: #7f8c8d;
     /* background-image: url('img/TexturaFondo.jpg'); */
     padding: 20px;
     border: 2px solid var(--primary-color);
@@ -184,7 +184,7 @@ button:hover {
 }
 
 .carousel-item img {
-    width: 100%;
+    width: 90%;
     max-height: 400px;
     object-fit: cover;
     border: 5px rgb(255, 255, 255) groove;
@@ -223,40 +223,65 @@ button:hover {
     border-radius: 50%;
 }
 
-.carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*inicia footer*/
+/* Estilos generales para el footer */
 footer {
-    background-color: var(--primary-color);
-    max-height: 120px;
-    color: var(--bg-color);
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    /* Reduce el espacio interno */
+    max-height: 100px;
+    /* Limita la altura */
+    overflow: hidden;
+    /* Oculta el contenido adicional si se excede la altura */
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-.footer-logo {
-    font-size: 2em;
+/* Estilos para la sección de información de contacto */
+footer p {
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
-.footer-contact {
-    font-size: 1.2em;
+/* Estilos para la sección de redes sociales */
+.iconoredes {
+    margin-top: 10px;
+    /* Reduce el espacio superior */
 }
 
-.footer-social-icons {
-    display: flex;
-    gap: 15px;
+.iconoredes i {
+    font-size: 2rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
 }
 
-.footer-social-icons img {
-    width: 30px; /* Ajusta el tamaño según tus necesidades */
+.iconoredes i:hover {
+    color: #55acee;
+    /* Color de Twitter */
+}
+
+.iconoredes i:nth-child(2):hover {
+    color: #1877f2;
+    /* Color de Facebook */
+}
+
+.iconoredes i:nth-child(3):hover {
+    color: #e4405f;
+    /* Color de Instagram */
+}
+
+/* Estilos para hacer el footer responsive */
+@media (max-width: 768px) {
+    footer p {
+        text-align: center;
+    }
+
+    .iconoredes {
+        text-align: center;
+        margin-top: 10px;
+        /* Reduce el espacio superior */
+    }
 }
