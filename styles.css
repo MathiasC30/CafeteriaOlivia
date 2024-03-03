@@ -1,11 +1,10 @@
-
 :root {
-    --primary-color: #2C3E50; 
-    --secondary-color: #34495E; 
-    --accent-color: #7F8C8D; 
+    --primary-color: #2C3E50;
+    --secondary-color: #34495E;
+    --accent-color: #7F8C8D;
     --text-color: #333;
-    --bg-color: #ECF0F1; 
-    --hover-color: #BDC3C7; 
+    --bg-color: #ECF0F1;
+    --hover-color: #BDC3C7;
 }
 
 * {
@@ -13,7 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    transition: all 0.3s ease;
+    transition: all 0.8s ease;
 }
 
 body {
@@ -23,12 +22,25 @@ body {
     color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-align: center;
     color: var(--primary-color);
     text-shadow: 2px 2px 5px var(--bg-color);
-    font-size: 2em; /* Títulos más grandes */
+    font-size: 2em;
 }
+
+header {
+    background-image: url(/img/Bannerfinal.png);
+    background-size: cover;
+    background-position: center;
+    max-height: 230px;
+}
+
 
 p {
     color: var(--bg-color);
@@ -43,7 +55,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
 }
 
 .navbar-nav .nav-item {
@@ -69,24 +80,34 @@ p {
 
 /* Estilos del Grid de Inicio */
 .image-container {
+   border: 3px #2C3E50 groove;
+    margin-top: 100px;
     position: relative;
+    max-width: 500px;
+    max-height: 500px;
     overflow: hidden;
     padding: 30px;
 }
+
+.image-container:hover {
+    border: #2C3E50 groove 8px;
+    border-radius: 50%;
+}
+
 .img-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--bg-color);
-    text-shadow: 6px 6px 3px var(--text-color);
-    font-size: 1.8em; /* Títulos más grandes */
+    text-shadow: 2px 2px 5px var(--text-color), 2px 2px 5px var(--text-color), 2px 2px 5px var(--text-color);
+    font-size: 1.5em;
     text-align: center;
     opacity: 0;
 }
 
 .image-container:hover .img-title {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .img-link {
@@ -96,11 +117,12 @@ p {
 
 /* Estilos del Formulario de Contacto */
 form {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
-    margin-top: 30px;
-    background-image: url('img/TexturaFondo2.jpg');
-    padding: 30px;
+    margin-top: 20px;
+    background-color: #7F8C8D;
+    /* background-image: url('img/TexturaFondo.jpg'); */
+    padding: 20px;
     border: 2px solid var(--primary-color);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -204,4 +226,37 @@ button:hover {
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*inicia footer*/
+footer {
+    background-color: var(--primary-color);
+    max-height: 120px;
+    color: var(--bg-color);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.footer-logo {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.footer-contact {
+    font-size: 1.2em;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social-icons img {
+    width: 30px; /* Ajusta el tamaño según tus necesidades */
 }
