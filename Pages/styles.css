@@ -17,7 +17,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background-image: url(/img/fondocafederecha.jpg);
+    background-image: url(../img/fondocafederecha.jpg);
     background-size: cover;
     color: var(--text-color);
 }
@@ -31,11 +31,11 @@ h6 {
     text-align: center;
     color: var(--primary-color);
     text-shadow: 2px 2px 5px var(--bg-color);
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 header {
-    background-image: url(/img/Bannerfinal.png);
+    background-image: url(../img/Bannerfinal.png);
     background-size: cover;
     background-position: center;
     max-height: 230px;
@@ -119,7 +119,7 @@ p {
 form {
     max-width: 600px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-bottom: 5px;
     background-color: #7f8c8d;
     /* background-image: url('img/TexturaFondo.jpg'); */
     padding: 20px;
