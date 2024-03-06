@@ -230,7 +230,7 @@ button:hover {
 /*inicia footer*/
 
 footer {
-    background-color: #333;
+    background-color: #4f4e4e;
     color: #fff;
     max-height: 120px;
     overflow: hidden;
@@ -242,8 +242,13 @@ footer p {
     margin-bottom: 10px;
 }
 
+footer h3 {
+    font-size: larger;
+    text-align: end;
+}
 .iconoredes {
     margin-top: 10px;
+    text-align: end;
 }
 
 .iconoredes i {
