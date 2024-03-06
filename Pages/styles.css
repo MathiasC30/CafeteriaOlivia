@@ -228,28 +228,22 @@ button:hover {
 }
 
 /*inicia footer*/
-/* Estilos generales para el footer */
+
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
-    /* Reduce el espacio interno */
-    max-height: 100px;
-    /* Limita la altura */
+    max-height: 120px;
     overflow: hidden;
-    /* Oculta el contenido adicional si se excede la altura */
+    text-align: center; 
 }
 
-/* Estilos para la sección de información de contacto */
 footer p {
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
-/* Estilos para la sección de redes sociales */
 .iconoredes {
     margin-top: 10px;
-    /* Reduce el espacio superior */
 }
 
 .iconoredes i {
@@ -260,28 +254,32 @@ footer p {
 
 .iconoredes i:hover {
     color: #55acee;
-    /* Color de Twitter */
+    rotate: 10deg;
+    scale: 1.3;
+    text-shadow: white 1px 1px 10px;
 }
 
 .iconoredes i:nth-child(2):hover {
-    color: #1877f2;
-    /* Color de Facebook */
+    color: #e4405f;
 }
 
 .iconoredes i:nth-child(3):hover {
-    color: #e4405f;
-    /* Color de Instagram */
+    color: #1877f2;
 }
 
-/* Estilos para hacer el footer responsive */
+
+
 @media (max-width: 768px) {
     footer p {
-        text-align: center;
+        font-size: 0.8rem; 
     }
 
     .iconoredes {
-        text-align: center;
-        margin-top: 10px;
-        /* Reduce el espacio superior */
+        margin-top: 5px; 
+    }
+
+    .iconoredes i {
+        font-size: 1.5rem; 
+        margin-right: 10px; 
     }
 }
