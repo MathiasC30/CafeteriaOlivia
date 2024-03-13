@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -35,15 +34,14 @@ header {
 }
 
 p {
-  color: var(--bg-color);
+  color: #ecf0f1;
   text-align: center;
-  text-shadow: 2px 2px 5px var(--text-color);
+  text-shadow: 2px 2px 5px #333;
 }
 
-/* Estilos de la Barra de Navegación */
 .navbar {
-  background-color: var(--primary-color);
-  border-bottom: 1px solid var(--accent-color);
+  background-color: #2c3e50;
+  border-bottom: 1px solid #7f8c8d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,11 +58,11 @@ p {
 }
 
 .navbar-toggler-icon {
-  background-color: var(--accent-color);
+  background-color: #7f8c8d;
 }
 
 .navbar-nav .nav-item a {
-  color: --text-color;
+  color: #333;
   text-decoration: none;
   padding: 8px 15px;
   border-radius: 5px;
@@ -73,11 +71,10 @@ p {
 }
 
 .navbar-nav .nav-item a:hover {
-  color: var(--primary-color);
-  background-color: var(--hover-color);
+  color: #2c3e50;
+  background-color: #bdc3c7;
 }
 
-/* Estilos del Grid de Inicio */
 .image-container {
   border: 3px #2c3e50 groove;
   margin-top: 100px;
@@ -99,8 +96,8 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: var(--bg-color);
-  text-shadow: 2px 2px 5px var(--text-color), 2px 2px 5px var(--text-color), 2px 2px 5px var(--text-color);
+  color: #ecf0f1;
+  text-shadow: 2px 2px 5px #333, 2px 2px 5px #333, 2px 2px 5px #333;
   font-size: 1.5em;
   text-align: center;
   opacity: 0;
@@ -115,15 +112,13 @@ p {
   text-decoration: none;
 }
 
-/* Estilos del Formulario de Contacto */
 form {
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 5px;
   background-color: #7f8c8d;
-  /* background-image: url('img/TexturaFondo.jpg'); */
   padding: 20px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid #2c3e50;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -143,7 +138,7 @@ select {
   margin-bottom: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid var(--primary-color);
+  border: 1px solid #2c3e50;
 }
 
 select {
@@ -151,32 +146,31 @@ select {
 }
 
 button {
-  background-color: var(--primary-color);
-  color: var(--bg-color);
+  background-color: #2c3e50;
+  color: #ecf0f1;
   padding: 10px 15px;
-  border: none;
+  border: solid 2px white;
   border-radius: 4px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: var(--hover-color);
+  background-color: #bdc3c7;
 }
 
 .card {
   margin: auto;
   padding: 10px;
-  color: var(--bg-color);
-  background-color: var(--primary-color);
+  color: #ecf0f1;
+  background-color: #2c3e50;
 }
 
 .card-p {
   margin: auto;
-  color: var(--bg-color);
-  background-color: var(--primary-color);
+  color: #ecf0f1;
+  background-color: #2c3e50;
 }
 
-/* Estilo del Carrusel */
 #carouselExample {
   padding: 50px;
 }
@@ -190,7 +184,7 @@ button:hover {
   max-height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 5px rgb(255, 255, 255) groove;
+  border: 5px #fff groove;
   border-radius: 20px;
 }
 
@@ -215,7 +209,6 @@ button:hover {
   font-size: 1.2em;
 }
 
-/* Estilo de los botones de control del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
   max-width: 100px;
@@ -231,7 +224,6 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/*inicia footer*/
 footer {
   background-color: #4f4e4e;
   color: #fff;
@@ -265,10 +257,10 @@ footer h3 {
 }
 
 .iconoredes i:hover {
-  color: #55acee;
+  color: #2d22ca;
   rotate: 10deg;
   scale: 1.3;
-  text-shadow: white 1px 1px 10px;
+  text-shadow: white 1px 1px 10px 0.7;
 }
 
 .iconoredes i:nth-child(2):hover {
@@ -276,7 +268,7 @@ footer h3 {
 }
 
 .iconoredes i:nth-child(3):hover {
-  color: #1877f2;
+  color: #4995f7;
 }
 
 @media (max-width: 768px) {
