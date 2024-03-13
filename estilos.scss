@@ -1,37 +1,33 @@
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #34495e;
-    --accent-color: #7f8c8d;
-    --text-color: #333;
-    --bg-color: #ecf0f1;
-    --hover-color: #bdc3c7;
-}
+$primary-color: #2c3e50;
+$secondary-color: #34495e;
+$accent-color: #7f8c8d;
+$text-color: #333;
+$bg-color: #ecf0f1;
+$hover-color: #bdc3c7;
+
+$transition-speed: 0.8s;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    transition: all 0.8s ease;
+    transition: all $transition-speed ease;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     background-image: url(../img/fondocafederecha.jpg);
     background-size: cover;
-    color: var(--text-color);
+    color: $text-color;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
-    color: var(--primary-color);
-    text-shadow: 2px 2px 5px var(--bg-color);
+    color: $primary-color;
+    text-shadow: 2px 2px 5px $bg-color;
     font-size: 1.5em;
+    transition: color $transition-speed ease;
 }
 
 header {
@@ -39,6 +35,7 @@ header {
     background-size: cover;
     background-position: center;
     max-height: 230px;
+    transition: max-height $transition-speed ease;
 }
 
 p {
