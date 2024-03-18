@@ -118,7 +118,9 @@ form {
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 5px;
-  background-color: #7f8c8d;
+  background: #3E5151; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#DECBA4), to(#3E5151));
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px;
   border: 2px solid #2c3e50;
   border-radius: 8px;
@@ -227,7 +229,9 @@ button:hover {
 }
 
 footer {
-  background-color: #4f4e4e;
+  background: #3E5151; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#DECBA4), to(#3E5151));
+  background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   max-height: 120px;
   overflow: hidden;
