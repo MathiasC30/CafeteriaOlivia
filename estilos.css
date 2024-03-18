@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  font-family: "Pacifico", cursive;
+  font-weight: 200;
+  font-style: normal;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-image: url(../img/fondocafederecha.jpg);
+  background-image: url(img/fondocafederecha.jpg);
   background-size: cover;
   color: #333;
 }
@@ -20,17 +22,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #2c3e50;
   text-shadow: 2px 2px 5px #ecf0f1;
   font-size: 1.5em;
-  -webkit-transition: color 0.8s ease;
-  transition: color 0.8s ease;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
 }
 
 header {
-  background-image: url(../img/Bannerfinal.png);
+  background-image: url(img/Bannerfinal.png);
   background-size: cover;
   background-position: center;
   max-height: 230px;
-  -webkit-transition: max-height 0.8s ease;
-  transition: max-height 0.8s ease;
+  -webkit-transition: max-height 1s ease;
+  transition: max-height 1s ease;
 }
 
 p {

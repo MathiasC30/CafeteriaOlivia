@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 $primary-color: #2c3e50;
 $secondary-color: #34495e;
 $accent-color: #7f8c8d;
@@ -5,19 +6,20 @@ $text-color: #333;
 $text-color2: rgb(241, 230, 186);
 $bg-color: #ecf0f1;
 $hover-color: #bdc3c7;
-$transition-speed: 0.8s;
+$transition-speed: 1s;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+        font-family: "Pacifico", cursive;
+        font-weight: 200;
+        font-style: normal;
     transition: all $transition-speed ease;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    background-image: url(../img/fondocafederecha.jpg);
+    background-image: url(img/fondocafederecha.jpg);
     background-size: cover;
     color: $text-color;
 }
@@ -31,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-image: url(../img/Bannerfinal.png);
+    background-image: url(img/Bannerfinal.png);
     background-size: cover;
     background-position: center;
     max-height: 230px;
