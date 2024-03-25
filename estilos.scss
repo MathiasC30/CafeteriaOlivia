@@ -117,6 +117,11 @@ p {
     text-decoration: none;
 }
 
+.row {
+    max-width: 50vh;
+    border: #34495e 10px solid;
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;
