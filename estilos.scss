@@ -43,7 +43,8 @@ header {
     background-image: url(img/Bannerfinal.png);
     background-size: cover;
     background-position: center;
-    max-height: 230px;
+    max-height: 300px;
+    object-fit:cover;
     transition: max-height $transition-speed ease;
 }
 
@@ -86,8 +87,8 @@ p {
     border: 3px $primary-color groove;
     margin-top: 100px;
     position: relative;
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 35vh;
+    max-height: 35vh;
     overflow: hidden;
     padding: 30px;
     object-fit: cover;
@@ -121,14 +122,14 @@ p {
     text-decoration: none;
 }
 
+
+/*formulario de contacto*/
 form {
     max-width: 600px;
     margin: 0 auto;
     margin-bottom: 5px;
-    background: #3E5151;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);    
     padding: 20px;
     border: 2px solid $primary-color;
     border-radius: 8px;
@@ -250,16 +251,13 @@ button:hover {
 /*inicia footer*/
 
 footer {
-    background: #3E5151;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);    
     color: #fff;
-    max-height: 100px;
-    overflow: hidden;
     text-align: center;
     padding: 10px;
-    }
-
+    margin-top: 10vh;
+}
 
 footer p {
     font-size: 1rem;
@@ -273,7 +271,7 @@ footer h3 {
 
 .iconoredes {
     margin-top: 10px;
-    text-align:right;
+    text-align: right;
     padding: 10px;
 }
 
@@ -286,11 +284,13 @@ footer h3 {
 .iconoredes i:hover {
     color: #4267B2;
     transform: rotate(30deg) scale(1.1);
-    text-shadow: white 5px 5px 10px 0.9;
+    text-shadow: white 2px 2px 5px, white 2px 2px 5px;
+    transition: $transition-speed;
 }
 
 .iconoredes i:nth-child(2):hover {
     color: #e4405f;
+    
 }
 
 .iconoredes i:nth-child(3):hover {
