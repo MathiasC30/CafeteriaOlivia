@@ -7,7 +7,7 @@ $text-color: #333;
 $text-color2: rgb(241, 230, 186);
 $bg-color: #ecf0f1;
 $hover-color: #bdc3c7;
-$transition-speed: 1s;
+$transition-speed: 0.5s;
 
 @mixin text-styles {
     font-family: "Pacifico", cursive;
@@ -26,6 +26,7 @@ $transition-speed: 1s;
 body {
     background-image: url(img/fondocafederecha.jpg);
     background-size: cover;
+    background-position: center;
     color: $text-color;
 }
 
@@ -89,11 +90,14 @@ p {
     max-height: 500px;
     overflow: hidden;
     padding: 30px;
+    object-fit: cover;
+    transition: border-radius $transition-speed ease;
 }
 
 .image-container:hover {
     border: $primary-color groove 8px;
     border-radius: 50%;
+
 }
 
 .img-title {
@@ -115,11 +119,6 @@ p {
 .img-link {
     display: block;
     text-decoration: none;
-}
-
-.row {
-    max-width: 50vh;
-    border: #34495e 10px solid;
 }
 
 form {
@@ -163,6 +162,7 @@ button {
     border: solid 2px white;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color $transition-speed ease;
 }
 
 button:hover {
@@ -233,16 +233,31 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* imagen lugar*/
+.img-fluid2 {
+    max-height: 400px;
+    max-width: 400px;
+    transition: transform 0.3s; 
+    padding: 10px;
+    border: $secondary-color 5px groove;
+}
+
+.img-fluid2:hover {
+    transform: scale(1.1); 
+    transform: rotate(5deg);
+}
+
+/*inicia footer*/
+
 footer {
     background: #3E5151;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    max-height: 70px;
+    max-height: 100px;
     overflow: hidden;
     text-align: center;
     padding: 10px;
-    margin-top: 10px;
     }
 
 
@@ -258,20 +273,20 @@ footer h3 {
 
 .iconoredes {
     margin-top: 10px;
-    text-align: end;
+    text-align:right;
+    padding: 10px;
 }
 
 .iconoredes i {
     font-size: 2rem;
     margin-right: 15px;
-    transition: color 0.3s ease;
+    transition: color 0.6s ease;
 }
 
 .iconoredes i:hover {
     color: #4267B2;
-    transform: rotate(30deg);
-    transform: scale(1.1);
-    text-shadow: white 1px 1px 10px 0.7;
+    transform: rotate(30deg) scale(1.1);
+    text-shadow: white 5px 5px 10px 0.9;
 }
 
 .iconoredes i:nth-child(2):hover {
@@ -285,6 +300,21 @@ footer h3 {
 @media (max-width: 768px) {
     footer p {
         font-size: 0.8rem;
+    }
+
+    .iconoredes {
+        margin-top: 5px;
+    }
+
+    .iconoredes i {
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 368px) {
+    footer p {
+        font-size: 0.3rem;
     }
 
     .iconoredes {
