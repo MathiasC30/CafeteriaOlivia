@@ -7,7 +7,7 @@ $text-color: #333;
 $text-color2: rgb(241, 230, 186);
 $bg-color: #ecf0f1;
 $hover-color: #bdc3c7;
-$transition-speed: 0.5s;
+$transition-speed: 0.8s ease;
 
 @mixin text-styles {
     font-family: "Pacifico", cursive;
@@ -51,9 +51,10 @@ header {
     background-size: cover;
     background-position: center;
     max-height: 40vh;
-    object-fit:cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
-
 p {
     color: $bg-color;
     text-align: center;
@@ -250,17 +251,60 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* imagen lugar*/
-.img-fluid2 {
-    max-height: 400px;
-    max-width: 100%; 
-    transition: $transition-speed;
-    padding: 10px;
-    border: $primary-color 5px groove;
+/* galeria de lugar */
+section.imageneslugar {
+    margin: auto;
+    width: 800px;
+    height: 430px;
+    display: flex;
+    justify-content: center;
 }
 
-.img-fluid2:hover {
-    transform: scale(1.1) rotate(5deg); 
+section.imageneslugar img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: $transition-speed;
+    filter: grayscale(40%);
+}
+
+section.imageneslugar img:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    box-shadow: 5px 5px 5px $hover-color;
+    border-radius: 10%;
+    transition: $transition-speed;
+    transform: scale(1.1);
+    filter: grayscale(0);
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    section.imageneslugar {
+        max-width: 90vw;
+        max-height: auto;
+    
+    }
+
+    section.imageneslugar img {
+        width: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        transition: $transition-speed;
+        box-shadow: inset 10px 10px 10px $bg-color;
+    }
+
+    section.imageneslugar img:hover {
+        width: 50%;
+    }
+}
+
+.col-md-6 {
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /*inicia footer*/
@@ -298,7 +342,7 @@ footer h3 {
 
 .iconoredes i:hover {
     color: #4267B2;
-    transform: rotate(30deg) scale(1.1);
+    transform: rotate(5deg) scale(1.5);
     text-shadow: white 2px 2px 5px, white 2px 2px 5px;
     transition: $transition-speed;
 }
@@ -310,6 +354,10 @@ footer h3 {
 
 .iconoredes i:nth-child(3):hover {
     color: #4995f7;
+}
+
+.iconoredes i:nth-child(4):hover {
+    color: #1c9f15;
 }
 
 @media (max-width: 768px) {

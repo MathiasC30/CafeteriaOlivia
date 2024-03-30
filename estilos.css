@@ -6,7 +6,7 @@
   font-family: "Pacifico", cursive;
   font-weight: 200;
   font-style: normal;
-  transition: all 0.5s ease;
+  transition: all 0.8s ease ease;
 }
 
 body {
@@ -21,12 +21,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #943b03;
   text-shadow: 2px 2px 5px #ecf0f1;
   font-size: 1.5em;
-  transition: color 0.5s ease;
+  transition: color 0.8s ease ease;
 }
 
 h1:hover {
   transform: scale(1.1);
-  transition: 0.5s;
+  transition: 0.8s ease;
   color: #ecf0f1;
   font-weight: bolder;
 }
@@ -38,6 +38,8 @@ header {
   max-height: 40vh;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 p {
@@ -49,7 +51,7 @@ p {
 
 p:hover {
   transform: scale(1.1);
-  transition: 0.5s;
+  transition: 0.8s ease;
   color: #ecf0f1;
   font-weight: bolder;
 }
@@ -93,7 +95,7 @@ p:hover {
   padding: 30px;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: border-radius 0.5s ease;
+  transition: border-radius 0.8s ease ease;
 }
 
 .image-container:hover {
@@ -162,7 +164,7 @@ button {
   border: solid 2px white;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.8s ease ease;
 }
 
 button:hover {
@@ -236,17 +238,58 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* imagen lugar*/
-.img-fluid2 {
-  max-height: 400px;
-  max-width: 100%;
-  transition: 0.5s;
-  padding: 10px;
-  border: #943b03 5px groove;
+/* galeria de lugar */
+section.imageneslugar {
+  margin: auto;
+  width: 800px;
+  height: 430px;
+  display: flex;
+  justify-content: center;
 }
 
-.img-fluid2:hover {
-  transform: scale(1.1) rotate(5deg);
+section.imageneslugar img {
+  width: 0;
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.8s ease;
+  filter: grayscale(40%);
+}
+
+section.imageneslugar img:hover {
+  cursor: pointer;
+  width: 300px;
+  opacity: 1;
+  box-shadow: 5px 5px 5px #bdc3c7;
+  border-radius: 10%;
+  transition: 0.8s ease;
+  transform: scale(1.1);
+  filter: grayscale(0);
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  section.imageneslugar {
+    max-width: 90vw;
+    max-height: auto;
+  }
+  section.imageneslugar img {
+    width: 0;
+    flex-grow: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: 0.8s ease;
+    box-shadow: inset 10px 10px 10px #ecf0f1;
+  }
+  section.imageneslugar img:hover {
+    width: 50%;
+  }
+}
+.col-md-6 {
+  margin: auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*inicia footer*/
@@ -283,9 +326,9 @@ footer h3 {
 
 .iconoredes i:hover {
   color: #4267B2;
-  transform: rotate(30deg) scale(1.1);
+  transform: rotate(5deg) scale(1.5);
   text-shadow: white 2px 2px 5px, white 2px 2px 5px;
-  transition: 0.5s;
+  transition: 0.8s ease;
 }
 
 .iconoredes i:nth-child(2):hover {
@@ -294,6 +337,10 @@ footer h3 {
 
 .iconoredes i:nth-child(3):hover {
   color: #4995f7;
+}
+
+.iconoredes i:nth-child(4):hover {
+  color: #1c9f15;
 }
 
 @media (max-width: 768px) {
