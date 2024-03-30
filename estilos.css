@@ -99,6 +99,7 @@ p:hover {
 .image-container:hover {
   border: #943b03 groove 8px;
   border-radius: 50%;
+  transition: 0.8s ease;
 }
 
 .img-title {
@@ -234,32 +235,6 @@ button:hover {
 
 .carousel-control-next-icon:hover {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.botonpedido {
-  margin: auto;
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-
-.botonpedido:hover {
-  background-color: #3e8e41;
-}
-
-.botonpedido:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
 }
 
 /* galeria de lugar */
